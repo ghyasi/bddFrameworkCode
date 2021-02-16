@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 0.905 s <<< FAILURE! - in runner.TestRunner
+Scenario: Execute all information from Actor Table  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "core.Base.properties" is null
+
+Scenario: Execute all information from Actor Table  Time elapsed: 0.164 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "core.Base.driver" is null
+
