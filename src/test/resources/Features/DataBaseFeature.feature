@@ -7,4 +7,3 @@ Scenario: Execute all information from Actor Table
 	When User sends querry 'select * from public.actor' 
 	Then User should get all information from that table
 	
-	changes

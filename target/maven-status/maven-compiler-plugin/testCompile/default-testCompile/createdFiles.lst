@@ -1,0 +1,7 @@
+stepDefinitions/Initializer.class
+runner/TestRunner.class
+stepDefinitions/LaptopNoteBooksStepDefinition.class
+stepDefinitions/DataBaseStepDefinition.class
+stepDefinitions/RetailPageTestStepDefinitions.class
+stepDefinitions/DesktopsStepDefiniation.class
+stepDefinitions/LoginTestStepDefinition.class

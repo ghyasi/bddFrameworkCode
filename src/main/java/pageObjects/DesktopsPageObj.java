@@ -17,14 +17,21 @@ public class DesktopsPageObj extends Base {
 	
       @FindBy(xpath="//body/div[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]")
       private WebElement desktopsBtn;
-      //@FindBy(xpath="//a[(text()='PC (0)')]")
-      //private WebElement PcOption;
-      //@FindBy (xpath="//a[(text()='Mac (1)')]")
-     // private WebElement MacOption;
+      
 	  @FindBy(xpath="//a[(text()='Show All Desktops')]")
 	  private WebElement showAllDesktopsOption;
 	  
-	  //
+	  @FindBy(xpath="//body/div[@id='product-category']/div[1]/div[1]/div[4]")
+	  private WebElement desktopItems;
+	
+	  
+	  
+	//a[contains(text(),'Apple Cinema 30\"')]
+	//*[@id="content"]/div[4]/div[7]/div/div[2]/div[1]/h4/a
+	//body/div[@id='product-category']/div[1]/div[1]/div[4]
+	 
+	  //**************************************************************************
+	  
 	 @FindBy(xpath="//*[@id='content']/div[4]/div[3]/div/div[2]/div[2]/button[1]")
 	
 	 private WebElement addToCartOption;
@@ -87,9 +94,9 @@ public class DesktopsPageObj extends Base {
 		
 	}
 	
-	public boolean successMsg() {
-		boolean successMessage=successMsg.isDisplayed();
-				return successMessage;
+	public boolean desktopItemIsDisplay() {
+		return desktopItems.isDisplayed();
+		 
 	}
 	
     //********************** HP ADD TO CART **************************************************

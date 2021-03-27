@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3351636197,
+              "duration": 2603462246,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 4,
-        "name": "",
+        "name": "User verify all items are present in Desktops tab",
         "description": "",
-        "id": "laptop\u0026-notebooks;",
+        "id": "desktops;user-verify-all-items-are-present-in-desktops-tab",
         "after": [
           {
             "result": {
-              "duration": 188488685,
+              "duration": 169927084,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2982972221,
+              "duration": 2868674072,
               "status": "passed"
             },
             "line": 5,
@@ -46,100 +46,53 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 851759172,
+              "status": "passed"
             },
             "line": 6,
-            "name": "User click on Laptop \u0026NoteBooktab",
-            "match": {},
+            "name": "User click on Desktops tab",
+            "match": {
+              "location": "DesktopsStepDefiniation.user_click_on_Desktops_tab()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1367837471,
+              "status": "passed"
             },
             "line": 7,
-            "name": "User click on Show all Laptop \u0026NoteBookoption",
-            "match": {},
+            "name": "User click on Show all desktops",
+            "match": {
+              "location": "DesktopsStepDefiniation.user_click_on_Show_all_desktops()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3605338642,
+              "status": "passed"
             },
             "line": 8,
-            "name": "User click on MacBook  item",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "User click add to Cart button",
+            "name": "User should see all items are present in Desktop page",
             "match": {
-              "location": "DesktopsStepDefiniation.user_click_add_to_Cart_button()"
+              "location": "DesktopsStepDefiniation.user_should_see_all_items_are_present_in_Desktop_page()"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "User should see a message ‘Success: You have added MacBook to your shopping cart!’",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "User should see ‘1tem(s)-602.00’showed to the cart",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "User click on cart option",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "user click on red X button to remove the item from cart",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "item should be removed and cartshould show ‘0 item(s)’",
-            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@laptop\u0026Notbook"
+            "name": "@Desktop"
           }
         ]
       }
     ],
-    "name": "Laptop\u0026 NoteBooks",
+    "name": "Desktops",
     "description": "",
-    "id": "laptop\u0026-notebooks",
+    "id": "desktops",
     "keyword": "Feature",
-    "uri": "Features/Laptop\u0026Notebook.feature"
+    "uri": "Features/Desktops.feature"
   }
 ]

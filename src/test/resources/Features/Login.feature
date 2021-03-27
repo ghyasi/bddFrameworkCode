@@ -3,14 +3,12 @@ Feature: Login to Retail Website
 
 #any steps which are repeated at the beginning of all scenarios in one feature can be placed
 #under Background keyword and it will reduce code duplicate and writing same steps over and over
-Background: 
-	Given User is on Retail website 
-	And User click  on MyAccount
+ 
 	
-	
-@login @SmokeTest 
+@loginTest 
 Scenario: Login to MyAccount 
-
+    Given User is on Retail website 
+	And User click  on MyAccount
 	When  User click on Login 
 	And User enter username 'sdet@tekschool.us' and password 'sdet' 
 	And User click on Login button 

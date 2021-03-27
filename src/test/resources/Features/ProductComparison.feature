@@ -1,5 +1,6 @@
 Feature: Product Comparison 
 
+@comparisonTest
 Scenario: Product Comparison 
 
 Given User is on Retail website

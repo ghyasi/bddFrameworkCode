@@ -34,6 +34,8 @@ public class DesktopsStepDefiniation extends Base {
 	@Then("^User should see all items are present in Desktop page$")
 	public void user_should_see_all_items_are_present_in_Desktop_page(){
 		
+		desktopspageObj.desktopItemIsDisplay();
+		
 		logger.info("User should see all items are present in Desktop page");
 		WebDriverUtility.screenShot();
 		WebDriverUtility.wait(3000);

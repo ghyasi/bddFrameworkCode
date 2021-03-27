@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -47,8 +48,53 @@ public class Laptops_NoteBooksPageObj extends Base {
 	@FindBy(xpath="//span[@id='cart-total']")
 	private WebElement ShowEmptyCart;
 	
-	//*******************************************************************************
+	//Product Camparison 
 	
+	@FindBy(xpath="//*[@id=\"content\"]/div[4]/div[2]/div/div[2]/div[2]/button[3]")
+	private WebElement comparIcon1;
+	
+	@FindBy(xpath="//*[@id=\"content\"]/div[4]/div[3]/div/div[2]/div[2]/button[3]")
+	private WebElement camparIcon2;
+	
+	@FindBy(xpath="//*[@id=\"product-category\"]/div[1]")
+	private WebElement comparisonMsg;
+	
+	@FindBy(xpath="//*[@id=\"compare-total\"]")
+	private WebElement totalCompairLink;
+	
+	@FindBy(xpath="//*[@id=\"product-compare\"]/ul/li[2]/a")
+	private WebElement compChartPage;
+	
+	
+	//This will scroll the web page till end.		
+    //js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	//*********************************************
+	//js.executeScript("window.scrollBy(0,1000)");
+	
+	
+	//Sony Vio wishlist
+	
+	@FindBy(xpath="//*[@id=\"content\"]/div[4]/div[5]/div/div[2]/div[2]/button[2]")
+	private WebElement sonyVioWishlistIcon;
+	
+	
+	@FindBy(xpath="//*[@id=\"product-category\"]/div[1]")
+	private WebElement sonyVioWishlistMsg;
+	
+	////*Macbook Pro Price *******************************
+	
+	@FindBy(xpath="//*[@id=\"content\"]/div[4]/div[4]/div/div[1]/a/img")
+	private WebElement MacbookProImage;
+	
+	@FindBy(xpath="//h2[contains(text(),'$2,000.00')]")
+	private WebElement MacbookProPrice ;
+	
+    /////***********
+	
+	
+	//*******************************************************************************
+
+	 
 	public void clicklaptopNotbooktab() {
 		WebDriverUtility.clickOnElement(laptopNotbooktab);
 	}
@@ -84,6 +130,58 @@ public class Laptops_NoteBooksPageObj extends Base {
 	public String ShowEmptyCart() {
 		return WebDriverUtility.getText(ShowEmptyCart);
 	}
+	
+	//*************************** Product Comparison **********************************
+	
+	public void clickcomparIcon1() {
+		WebDriverUtility.clickOnElement(comparIcon1);
+	} 
+	
+	public void clickcamparIcon2() {
+		WebDriverUtility.clickOnElement(camparIcon2);
+	}
+	
+	public boolean comparisonMsg() {
+		boolean comparison= comparisonMsg.isDisplayed();
+		return comparison;
+	}
+	//public void comparisonMsg() {
+		//WebDriverUtility.acceptAlert();;
+	//}
+	
+	public void clicktotalCompairLink() {
+		WebDriverUtility.clickOnElement(totalCompairLink);
+	}
+	
+	public void compChartPage() {
+		//WebDriverUtility.scrollPageDownWithJS();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,1000)");
+	}
+	
+	//****************** SONY VIO WISHLIST *********************************
+	
+	public void clicksonyVioWishlistIcon() {
+		WebDriverUtility.clickOnElement(sonyVioWishlistIcon);
+	}
+	
+	public boolean sonyVioWishlistMsg() {
+		boolean addToWishlishMsg= sonyVioWishlistMsg.isDisplayed();
+		return addToWishlishMsg;
+	}
+	
+	//***********************MacBookPro Price
+	
+	public void clickMacbookproImg() {
+		WebDriverUtility.clickOnElement(MacbookProImage);
+	}
+	
+	public boolean macbookProPrice() {
+	    boolean macbookproPrice= MacbookProPrice.isDisplayed();
+	    return macbookproPrice;
+	}
+	
+	
 	
 	
 }

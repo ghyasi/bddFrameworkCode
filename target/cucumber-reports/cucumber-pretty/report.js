@@ -1,26 +1,26 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/Laptop\u0026Notebook.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/Desktops.feature");
 formatter.feature({
   "line": 1,
-  "name": "Laptop\u0026 NoteBooks",
+  "name": "Desktops",
   "description": "",
-  "id": "laptop\u0026-notebooks",
+  "id": "desktops",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3351636197,
+  "duration": 2603462246,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "",
+  "name": "User verify all items are present in Desktops tab",
   "description": "",
-  "id": "laptop\u0026-notebooks;",
+  "id": "desktops;user-verify-all-items-are-present-in-desktops-tab",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 3,
-      "name": "@laptop\u0026Notbook"
+      "name": "@Desktop"
     }
   ]
 });
@@ -31,96 +31,49 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User click on Laptop \u0026NoteBooktab",
+  "name": "User click on Desktops tab",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "User click on Show all Laptop \u0026NoteBookoption",
+  "name": "User click on Show all desktops",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "User click on MacBook  item",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User click add to Cart button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "User should see a message ‘Success: You have added MacBook to your shopping cart!’",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "User should see ‘1tem(s)-602.00’showed to the cart",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "User click on cart option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "user click on red X button to remove the item from cart",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "item should be removed and cartshould show ‘0 item(s)’",
+  "name": "User should see all items are present in Desktop page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginTestStepDefinition.user_is_on_Retail_website()"
 });
 formatter.result({
-  "duration": 2982972221,
+  "duration": 2868674072,
   "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DesktopsStepDefiniation.user_click_on_Desktops_tab()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "duration": 851759172,
+  "status": "passed"
 });
 formatter.match({
-  "location": "DesktopsStepDefiniation.user_click_add_to_Cart_button()"
+  "location": "DesktopsStepDefiniation.user_click_on_Show_all_desktops()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1367837471,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DesktopsStepDefiniation.user_should_see_all_items_are_present_in_Desktop_page()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "duration": 3605338642,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 188488685,
+  "duration": 169927084,
   "status": "passed"
 });
 });

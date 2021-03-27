@@ -1,10 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 0.905 s <<< FAILURE! - in runner.TestRunner
-Scenario: Execute all information from Actor Table  Time elapsed: 0.047 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "core.Base.properties" is null
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.5 s <<< FAILURE! - in runner.TestRunner
+initializationError(runner.TestRunner)  Time elapsed: 0.008 s  <<< ERROR!
+cucumber.runtime.CucumberException: Error parsing feature file Features/DataBaseFeature.feature
+Caused by: gherkin.lexer.LexingError: 
+Lexing error on line 10: 'changes
 
-Scenario: Execute all information from Actor Table  Time elapsed: 0.164 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "core.Base.driver" is null
+%_FEATURE_END_%'. See http://wiki.github.com/cucumber/gherkin/lexingerror for more information.
 
